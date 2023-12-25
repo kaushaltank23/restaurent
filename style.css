@@ -1,0 +1,125 @@
+*{
+    margin: 0 auto;
+    padding: 0 auto;
+    box-sizing: border-box;
+}
+.sec-1{
+    background-color: turquoise;
+    height: 750px;
+}
+.sec-1 h2{
+    text-align: center;
+    padding: 50px 0 0 0 ;
+}
+.row{
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.cb{
+    display: block  ;
+    text-align: center;
+    width: 100%;
+    margin: 30px 0;
+    font-size: 25px;
+}
+.cb select{
+    width:30%;
+    font-size: 20px;
+    background-color:transparent;
+    border-radius: 50px;
+    padding: 3px 20px;
+}
+.user{
+    /* text-align: center; */
+    width: 45%;
+}
+.user label {
+   font-size: 25px;
+   
+}
+.user input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 20px;
+    margin: 0 0 0 50px
+}
+.number{
+    width: 45%;
+}
+.number label {
+    font-size: 25px;
+    
+ }
+.number input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 20px;
+    margin: 20px 0;
+}
+.email{
+    width: 45%;
+}
+.email label {
+    font-size: 25px;
+    
+ }
+ .email input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 20px;
+    margin:0 0 20px 100px;
+}
+.no {
+    width: 45%;
+}
+.no label {
+    font-size: 25px;
+    
+ }
+ .no input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 20px;
+    margin: 0 0 20px 15px;
+}
+.date{
+    width: 45%;
+}
+.date label {
+    font-size: 25px;
+    
+ }
+.date input{
+    width: 50%;
+    background-color: transparent;
+    border-radius: 50px;
+    border: 1px solid black;
+    padding: 3px 20px;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+.dt{
+    width: 57%;
+}
+.submit{
+    width: 10%;
+    margin: 20px auto;
+}
+.submit input{
+    width: 100%;
+    font-size: 20px;
+    padding: 5px 10px;
+    background-color: blue;
+}

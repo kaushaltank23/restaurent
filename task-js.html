@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <section class="sec-1">
+
+        <div>
+            <h2>Restaurant Booking Form</h2>
+        </div>
+
+        <form id="bookingForm">
+
+            <div class="">
+                <div class="cb">
+                    <label for="bookingChoice">Choice of Booking:</label>
+                    <select id="bookingChoice" onchange="updateForm()">
+                        <option value="fullday">Full day booking</option>
+                        <option value="halfday">Half day booking</option>
+                        <option value="hourly">Hourly booking</option>
+                    </select>
+                </div>
+                <div class="user">
+                    <label for="userName">User Name:</label>
+                    <input type="text" id="userName" required>
+
+                </div>
+                <div class="number">
+                    <label for="mobileNumber">Mobile Number:</label>
+                    <input type="tel" id="mobileNumber" required>
+
+                </div>
+                <div class="email">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" required>
+
+                </div>
+                <div class="no">
+                    <label for="noOfPersons">No of Persons:</label>
+                    <input type="number" id="noOfPersons" required>
+
+                </div>
+
+                <div class="row dt">
+                    <div class="date">
+                        <label for="date">Date:</label>
+                        <input type="date" id="date" required>
+                    </div>
+                    <div>
+
+                        <div class="row" id="timeSlotSection" style="display: none;">
+                            <div>
+                            <label for="time">Time:</label>
+                            <input type="time" id="time" required>
+                        </div>
+                        <div>
+                            <label for="slot">Slot:</label>
+                            <select id="slot">
+                                <option value="breakfast">Breakfast</option>
+                                <option value="lunch">Lunch</option>
+                                <option value="dinner">Dinner</option>
+                            </select>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="submit">
+                    <input type="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+
+    </section>
+
+
+
+
+
+    <script>
+        function updateForm() {
+            var bookingChoice = document.getElementById("bookingChoice").value;
+            var timeSlotSection = document.getElementById("timeSlotSection");
+
+            if (bookingChoice === "fullday") {
+                timeSlotSection.style.display = "none";
+            } else if (bookingChoice === "halfday") {
+                timeSlotSection.style.display = "block";
+            } else if (bookingChoice === "hourly") {
+                timeSlotSection.style.display = "block";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
